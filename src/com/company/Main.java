@@ -3,12 +3,14 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
+
+//TEMA LAB 9
 //Exercitiul 1: Salut + Nume
 
         String salut = "Hello";
-	    String myName = "Krisztina";
+        String myName = "Krisztina";
 
-            System.out.println(salut + "\n"+ myName);
+        System.out.println(salut + "\n" + myName);
 
 
 //Exercitiul 2: Suma 2 numere la alegere
@@ -19,7 +21,7 @@ public class Main {
 
         double result = firstNumber + secondNumber;
 
-            System.out.println("Suma 2 numere:" + result);
+        System.out.println("Suma 2 numere:" + result);
 
 //Exercitiul 3: impartire 2 numere
 
@@ -28,7 +30,7 @@ public class Main {
 
         long result2 = numberDevide1 / numberDevide2;
 
-            System.out.println("Impartire 2 numere:" + result2);
+        System.out.println("Impartire 2 numere:" + result2);
 
 //Exercitiul 4/a:
 
@@ -38,7 +40,7 @@ public class Main {
 
         int result3 = number1 + number2 * number3;
 
-            System.out.println("Ex 4a:" + result3);
+        System.out.println("Ex 4a:" + result3);
 
 //Exercitiul 4/b:
 
@@ -48,9 +50,9 @@ public class Main {
 
         float result4 = (number4 + number5) % number6;
 
-            System.out.println("Ex 4b:" + result4);
+        System.out.println("Ex 4b:" + result4);
 
- //Exercitiul 4/c:
+        //Exercitiul 4/c:
 
         byte number7 = 20;
         int number8 = -3;
@@ -59,7 +61,7 @@ public class Main {
 
         float result5 = number7 + (number8 * number9 / number10);
 
-            System.out.println("Ex 4c:" + result5);
+        System.out.println("Ex 4c:" + result5);
 
 
 //Exercitiul 4/d
@@ -73,8 +75,10 @@ public class Main {
 
         int result6 = number11 + number12 / number13 * number14 - number15 % number16;
 
-            System.out.println("Ex 4d:" + result6);
+        System.out.println("Ex 4d:" + result6);
 
 
     }
+
+
 }
