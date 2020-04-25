@@ -2,9 +2,36 @@ package AnimalRescue;
 
 public class DogFood {
 
-    public String name = "Chappie";
-    public float price = 80.5F;
-    public float quantity = 9.5F;
+    private String name;
+    private float price;
+    private float quantity;
+
+
+    public String getName () {
+        return name;
+    }
+
+    public void setName (String name) {
+        this.name = name;
+    }
+
+
+    public float getPrice () {
+        return price;
+    }
+
+    public void setPrice (float price) {
+        this.price = price;
+    }
+
+
+    public float getQuantity () {
+        return quantity;
+    }
+
+    public void setQuantity (float quantity) {
+        this.quantity = quantity;
+    }
 
 
 

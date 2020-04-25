@@ -4,6 +4,8 @@ public class Lab10 {
 
     public static void main(String[] args) {
 
+        Calculator calc = new Calculator();
+
         System.out.println("Pe baza exercitiilor din Lab 9 \n");
         nameOne();
         two();
@@ -15,16 +17,16 @@ public class Lab10 {
 
         System.out.println("\n");
 
-        int sumMethod = sum(67,79);
+        int sumMethod = calc.sum(67,79);
         System.out.println("The result of the addition is: " + sumMethod);
 
-        int decreaseMethod = decrease(46,24);
+        int decreaseMethod = calc.decrease(46,24);
         System.out.println("The result of the subtraction is: " + decreaseMethod);
 
-        int multiplyMethod = multiply(15,46);
+        int multiplyMethod = calc.multiply(15,46);
         System.out.println("The result of the multiplication is: " + multiplyMethod);
 
-        double divisionMethod = divide(36,7);
+        double divisionMethod = calc.divide(36,7);
         System.out.println("The result of the division is: " + divisionMethod + "\n");
 
         patternJava();
@@ -90,25 +92,7 @@ public class Lab10 {
 
     //LAB 10/2
 
-    public static int sum (int firstNumber , int secondNumber) {
-        int result = firstNumber + secondNumber;
-        return result;
-    }
 
-    public static int decrease (int firstNumber, int secondNumber) {
-        int result = firstNumber - secondNumber;
-        return result;
-    }
-
-    public static int multiply (int firstNumber, int secondNumber) {
-        int result = firstNumber * secondNumber;
-        return result;
-    }
-
-    public static double divide (double firstNumber, double secondNumber) {
-        double result = firstNumber / secondNumber;
-        return result;
-    }
 
     //Lab 10/3 JAVA
     public static void patternJava () {

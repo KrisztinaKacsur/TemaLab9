@@ -6,15 +6,15 @@ public class AppMain {
 
         Dog myPet = new Dog();
 
-        System.out.println(myPet.name);
-        System.out.println(myPet.race);
-        System.out.println(myPet.color);
-        System.out.println(myPet.favouriteFood);
-        System.out.println(myPet.favouriteActivity);
-        System.out.println(myPet.age);
-        System.out.println(myPet.wight);
-        System.out.println(myPet.health);
-        System.out.println(myPet.mood);
+        System.out.println(myPet.getName());
+        System.out.println(myPet.getRace());
+        System.out.println(myPet.getColor());
+        System.out.println(myPet.getFavouriteFood());
+        System.out.println(myPet.getFavouriteActivity());
+        System.out.println(myPet.getAge());
+        System.out.println(myPet.getWeight());
+        System.out.println(myPet.getHealth());
+        System.out.println(myPet.getMood());
 
 
         Girl myHuman = new Girl();
@@ -25,15 +25,15 @@ public class AppMain {
 
         DogFood myDogFood = new DogFood();
 
-        System.out.println(myDogFood.name);
-        System.out.println(myDogFood.price);
-        System.out.println(myDogFood.quantity);
+        System.out.println(myDogFood.getName());
+        System.out.println(myDogFood.getPrice());
+        System.out.println(myDogFood.getQuantity());
 
 
         Vet myDoctor = new Vet();
 
-        System.out.println(myDoctor.name);
-        System.out.println(myDoctor.specialization);
+        System.out.println(myDoctor.getName());
+        System.out.println(myDoctor.getSpecialization());
 
 
     }
