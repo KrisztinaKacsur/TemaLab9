@@ -4,7 +4,7 @@ public class AppMain2 {
 
     public static void main(String[] args) {
 
-        Dog maya = new Dog();
+        Animal maya = new Animal();
         maya.setName("Maya");
         maya.setRace("labrador");
         maya.setColor("black");
@@ -27,7 +27,7 @@ public class AppMain2 {
         System.out.println(maya.getMood());
 
 
-        Girl human = new Girl();
+        Rescuer human = new Rescuer();
         human.setName("Freya");
         human.setMoney(3500);
 
@@ -36,7 +36,7 @@ public class AppMain2 {
 
 
 
-        DogFood food = new DogFood();
+        Food food = new Food();
         food.setName("Chappie");
         food.setPrice(80.5F);
         food.setQuantity(9.5F);
@@ -44,6 +44,11 @@ public class AppMain2 {
         System.out.println(food.getName());
         System.out.println(food.getPrice());
         System.out.println(food.getQuantity());
+
+        Activity recreationalActivity = new Activity();
+        recreationalActivity.setActivityName ("Catch the ball");
+
+        System.out.println(recreationalActivity.getActivityName());
 
 
         Vet doctor = new Vet();

@@ -25,7 +25,7 @@ public class Lab11 {
         String textVerify = logical.checkText("FastTrackIT");
         System.out.println(textVerify);
 
-        String andConditionMethod = logical.returnTextNumber(" FastTrackIT " , 3);
+        String andConditionMethod = logical.returnTextNumber(" kecsT " , 8);
         System.out.println(andConditionMethod);
 
         String orConditionMethod = logical.orCondition(9);

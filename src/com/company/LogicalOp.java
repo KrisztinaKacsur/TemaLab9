@@ -21,7 +21,7 @@ public class LogicalOp {
             return "Got to try some more.";
         }
     }
-
+//==
 
     //ex5
     public String returnTextNumber (String text, int number) {
@@ -46,7 +46,7 @@ public class LogicalOp {
 
     //ex 7
     public String greaterThanEqualTo (int number) {
-        if ( number > 4 && number != 4) {
+        if ( number > 3 && number != 4) {
             return "The number is greater than 3 and not equal to 4";
         } else if (number == 4) {
             return "The number is equal to 4";

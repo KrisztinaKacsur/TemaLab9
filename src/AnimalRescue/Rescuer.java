@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Girl {
+public class Rescuer {
 
     public String name;
     public int money;

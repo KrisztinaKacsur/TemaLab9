@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Dog {
+public class Animal {
 
     private String name;
     private String race;

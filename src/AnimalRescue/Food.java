@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class DogFood {
+public class Food {
 
     private String name;
     private float price;

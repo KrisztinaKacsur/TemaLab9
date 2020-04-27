@@ -4,7 +4,7 @@ public class AppMain {
 
     public static void main(String[] args) {
 
-        Dog myPet = new Dog();
+        Animal myPet = new Animal();
 
         System.out.println(myPet.getName());
         System.out.println(myPet.getRace());
@@ -17,13 +17,13 @@ public class AppMain {
         System.out.println(myPet.getMood());
 
 
-        Girl myHuman = new Girl();
+        Rescuer myHuman = new Rescuer();
 
         System.out.println(myHuman.name);
         System.out.println(myHuman.money);
 
 
-        DogFood myDogFood = new DogFood();
+        Food myDogFood = new Food();
 
         System.out.println(myDogFood.getName());
         System.out.println(myDogFood.getPrice());
