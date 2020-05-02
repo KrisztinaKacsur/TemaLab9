@@ -44,7 +44,36 @@ public class Lab11 {
         System.out.println(isEligibleToVoteMethod);
 
         String returnBiggestNumber = logical.returnBiggestNumber(67, 14, 2);
-        System.out.println(returnBiggestNumber);
+        System.out.println(returnBiggestNumber + "\n");
+
+
+        System.out.println("Tema Laborator 12: \n");
+
+        logical.upToOneHundred(6);
+        System.out.println("\n");
+
+        logical.negativeUpToOneHundred(60);
+        System.out.println("\n");
+
+        logical.countingBetweenTwoNumbers(2,8);
+        System.out.println("\n");
+
+        logical.verifyAndCount(5,2);
+        System.out.println("\n");
+
+        logical.evenNumbers();
+        System.out.println("\n");
+
+        logical.oddNumbers();
+        System.out.println("\n");
+
+        int addUp = logical.addingUp(50);
+        System.out.println("Sum of given number up to 100: " +addUp + "\n");
+
+        double average = logical.average(63);
+        System.out.println("Average between given number and 100: " + average + "\n");
+
+        logical.stars();
 
 
     }

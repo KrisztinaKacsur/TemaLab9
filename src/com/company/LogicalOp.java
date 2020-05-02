@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.stream.IntStream;
+
 public class LogicalOp {
 
 
@@ -126,6 +128,106 @@ public class LogicalOp {
 
     }
 
+
+
+    //LAB 12/ex 1
+    public void upToOneHundred (int givenNumber) {
+        System.out.println("Count from given number up to 100: ");
+       for (int i = givenNumber; i <= 100; i++ ){
+           System.out.println(i);
+       }
+    }
+
+
+    //LAB 12/ex 2
+    public void negativeUpToOneHundred (int givenNumber){
+        System.out.println("Count from given number up to -100: ");
+        for (int i = givenNumber; i <=100; i++){
+            System.out.println(-i);
+        }
+    }
+
+
+    //LAB 12/ ex 3
+    public void countingBetweenTwoNumbers (int firstNumber, int secondNumber) {
+        System.out.println("Count between 2 given numbers: ");
+       for (int i = firstNumber; i <= secondNumber; i++) {
+           System.out.println(i);
+       }
+    }
+
+    //LAB 12/ex 4
+    public void verifyAndCount (int firstNumber, int secondNumber) {
+        System.out.println("Verify smaller number and count: ");
+        int smallerNumber = Math.min(firstNumber, secondNumber);
+        int biggerNumber = Math.max(firstNumber, secondNumber);
+
+        for (int i = smallerNumber; i <= biggerNumber; i++){
+            System.out.println(i);
+        }
+    }
+
+
+    //LAB 12/ex 5
+    public void evenNumbers () {
+        System.out.println("Print even numbers between 1 and 100: ");
+        int endCounting = 100;
+
+        for (int i = 1; i <= endCounting; i++) {
+            if (i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+    }
+
+
+    //LAB 12/ex 6
+    public void oddNumbers () {
+        System.out.println("Print odd numbers between 1 and 100: ");
+        int endCounting = 100;
+
+        for (int i = 1; i <= endCounting; i++) {
+            if (i % 2 != 0){
+                System.out.println(i);
+            }
+        }
+    }
+
+    //Lab 12/ex 7
+    public int addingUp (int givenNumber){
+        int sum = 0;
+        for (int i = givenNumber; i <= 100; i++){
+            sum += i;
+        }
+        return sum;
+    }
+
+    //Lab 12/ ex 8
+
+    public double average (double givenNumber) {
+        double sum = 0;
+        double length = 100 - givenNumber + 1;
+
+        for (double i = givenNumber; i <= 100; i++){
+            sum += i;
+        }
+        return sum/length;
+    }
+
+
+    //Lab 12/ ex 9
+    public void stars () {
+        System.out.println("Star pattern \n");
+        int rows;
+        int columns;
+
+        for (rows = 7; rows >= 1; rows-- ){
+            for (columns = 1; columns <= rows; columns++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
 
 
 }
