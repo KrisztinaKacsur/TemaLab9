@@ -204,14 +204,16 @@ public class LogicalOp {
 
     //Lab 12/ ex 8
 
-    public double average (double givenNumber) {
-        double sum = 0;
-        double length = 100 - givenNumber + 1;
+    public float getAverage (int givenNumber) {
+        float sum = 0;
 
-        for (double i = givenNumber; i <= 100; i++){
+        for (float i = givenNumber; i <= 100; i++){
             sum += i;
         }
-        return sum/length;
+        float average = sum / 100F;
+        System.out.println(sum);
+        System.out.println(average);
+        return (average);
     }
 
 
@@ -228,6 +230,122 @@ public class LogicalOp {
             System.out.println();
         }
     }
+
+
+    //Lab 12/ex
+
+    public float sumAverageWhile () {
+        int number = 1;
+        int sum = 0;
+
+        while (number <= 100) {
+            sum += number;
+            number++;
+        }
+        return sum / 100F;
+    }
+
+
+    //Lab 12 / ex 1
+
+    public void countToHundredWhile (int givenNumber) {
+
+        while (givenNumber <= 100) {
+            System.out.println(givenNumber);
+            givenNumber++;
+        }
+
+    }
+
+    //Lab 12 / ex 2
+
+    public void countBackwardsWhile (int givenNumber) {
+        while (givenNumber >= -100 ) {
+            System.out.println(givenNumber);
+            givenNumber--;
+        }
+
+    }
+
+    //Lab 12/ ex 3
+    public void countBetweenWhile (int firstNumber, int secondNumber) {
+        while (firstNumber <= secondNumber) {
+            System.out.println(firstNumber);
+            firstNumber++;
+        }
+    }
+
+    //Lab 12 / ex 4
+    public void countFromSmallToBigWhile (int firstNumber, int secondNumber) {
+        int smallerNumber = Math.min(firstNumber, secondNumber);
+        int biggerNumber = Math.max(firstNumber, secondNumber);
+
+        while (smallerNumber <= biggerNumber) {
+            System.out.println(smallerNumber);
+            smallerNumber++;
+        }
+
+    }
+
+    //Lab 12 / ex 5
+    public void evenNumbersWhile () {
+
+        int firstNumber = 1;
+
+        while (firstNumber <= 100) {
+           firstNumber++;
+
+           if (firstNumber % 2 == 0) {
+               System.out.println(firstNumber);
+           }
+        }
+    }
+
+
+   // Lab 12 / ex 6
+    public void oddNumberWhile () {
+        int countFrom = 0;
+        int endCount = 100;
+
+        while (countFrom < endCount) {
+            countFrom++;
+
+            if (countFrom % 2 != 0) {
+                System.out.println(countFrom);
+            }
+        }
+    }
+
+    //Lab 12 / ex 7
+    public void sumAndAverageWhile () {
+        int firstNumber = 111;
+        int secondNumber = 8899;
+
+        double sum = 111;
+
+        int count = 8899 - 111 + 1;
+
+        while (firstNumber <= secondNumber) {
+            sum += firstNumber;
+            firstNumber++;
+
+        }
+
+        System.out.println(sum);
+        System.out.println("Numbers between 111 - 8899: " + count);
+        double average = sum / count;
+        System.out.println ("The average of the numbers is: " + average);
+
+    }
+
+
+
+
+
+
+
+
+
 
 
 }

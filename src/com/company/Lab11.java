@@ -70,10 +70,43 @@ public class Lab11 {
         int addUp = logical.addingUp(50);
         System.out.println("Sum of given number up to 100: " +addUp + "\n");
 
-        double average = logical.average(63);
-        System.out.println("Average between given number and 100: " + average + "\n");
+        double average = logical.getAverage(1);
+
+        float averageWhile = logical.sumAverageWhile();
+        System.out.println(averageWhile);
 
         logical.stars();
+
+        logical.countToHundredWhile(89);
+        System.out.println("\n");
+
+        logical.countBackwardsWhile(-90);
+        System.out.println("\n");
+
+        logical.countBetweenWhile(5,9);
+        System.out.println("\n");
+
+        logical.countFromSmallToBigWhile(70,63);
+        System.out.println("\n");
+
+        logical.evenNumbersWhile();
+        System.out.println("\n");
+
+        logical.oddNumberWhile();
+        System.out.println("\n");
+
+        logical.sumAndAverageWhile();
+        System.out.println("\n");
+
+
+
+
+
+
+
+
+
+
 
 
     }
