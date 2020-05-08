@@ -98,6 +98,16 @@ public class Lab11 {
         logical.sumAndAverageWhile();
         System.out.println("\n");
 
+        float divide = logical.divideBySevenWhile(1,70);
+        System.out.println(divide + "\n");
+
+        logical.fibonacci();
+
+        logical.cozaLozaWoza();
+
+
+
+
 
 
 

@@ -26,7 +26,7 @@ public class LogicalOp {
 //==
 
     //ex5
-    public String returnTextNumber (String text, int number) {
+    public String returnTextNumber(String text, int number) {
         if (text.equals("FastTrackIT ") && number <= 3) {
             return text + number;
         } else if (!text.equals("FastTrackIT ") && number <= 4) {
@@ -47,18 +47,19 @@ public class LogicalOp {
     }
 
     //ex 7
-    public String greaterThanEqualTo (int number) {
-        if ( number > 3 && number != 4) {
+    public String greaterThanEqualTo(int number) {
+        if (number > 3 && number != 4) {
             return "The number is greater than 3 and not equal to 4";
         } else if (number == 4) {
             return "The number is equal to 4";
-        } else if (number < 3); {
+        } else if (number < 3) ;
+        {
             return "The number is lower than 3";
         }
     }
 
     //ex 8
-    public void printNumber (int number) {
+    public void printNumber(int number) {
         switch (number) {
             case 0:
                 System.out.println("The number os 0");
@@ -96,11 +97,10 @@ public class LogicalOp {
     }
 
 
-
     //ex 9
 
-    public boolean isNumberEven (int number) {
-        if (number % 2 == 0){
+    public boolean isNumberEven(int number) {
+        if (number % 2 == 0) {
             return true;
         } else {
             return false;
@@ -108,7 +108,7 @@ public class LogicalOp {
     }
 
     //10
-    public boolean isEligibleToVote (int number) {
+    public boolean isEligibleToVote(int number) {
         if (number >= 18) {
             return true;
         } else {
@@ -117,7 +117,7 @@ public class LogicalOp {
     }
 
     //ex 11
-    public String returnBiggestNumber (int firstNumber, int secondNumber, int thirdNumber){
+    public String returnBiggestNumber(int firstNumber, int secondNumber, int thirdNumber) {
         if (firstNumber >= secondNumber && firstNumber >= thirdNumber) {
             return "The largest number is: " + firstNumber;
         } else if (secondNumber >= firstNumber && secondNumber >= thirdNumber) {
@@ -129,52 +129,51 @@ public class LogicalOp {
     }
 
 
-
     //LAB 12/ex 1
-    public void upToOneHundred (int givenNumber) {
+    public void upToOneHundred(int givenNumber) {
         System.out.println("Count from given number up to 100: ");
-       for (int i = givenNumber; i <= 100; i++ ){
-           System.out.println(i);
-       }
+        for (int i = givenNumber; i <= 100; i++) {
+            System.out.println(i);
+        }
     }
 
 
     //LAB 12/ex 2
-    public void negativeUpToOneHundred (int givenNumber){
+    public void negativeUpToOneHundred(int givenNumber) {
         System.out.println("Count from given number up to -100: ");
-        for (int i = givenNumber; i <=100; i++){
+        for (int i = givenNumber; i <= 100; i++) {
             System.out.println(-i);
         }
     }
 
 
     //LAB 12/ ex 3
-    public void countingBetweenTwoNumbers (int firstNumber, int secondNumber) {
+    public void countingBetweenTwoNumbers(int firstNumber, int secondNumber) {
         System.out.println("Count between 2 given numbers: ");
-       for (int i = firstNumber; i <= secondNumber; i++) {
-           System.out.println(i);
-       }
+        for (int i = firstNumber; i <= secondNumber; i++) {
+            System.out.println(i);
+        }
     }
 
     //LAB 12/ex 4
-    public void verifyAndCount (int firstNumber, int secondNumber) {
+    public void verifyAndCount(int firstNumber, int secondNumber) {
         System.out.println("Verify smaller number and count: ");
         int smallerNumber = Math.min(firstNumber, secondNumber);
         int biggerNumber = Math.max(firstNumber, secondNumber);
 
-        for (int i = smallerNumber; i <= biggerNumber; i++){
+        for (int i = smallerNumber; i <= biggerNumber; i++) {
             System.out.println(i);
         }
     }
 
 
     //LAB 12/ex 5
-    public void evenNumbers () {
+    public void evenNumbers() {
         System.out.println("Print even numbers between 1 and 100: ");
         int endCounting = 100;
 
         for (int i = 1; i <= endCounting; i++) {
-            if (i % 2 == 0){
+            if (i % 2 == 0) {
                 System.out.println(i);
             }
         }
@@ -182,21 +181,21 @@ public class LogicalOp {
 
 
     //LAB 12/ex 6
-    public void oddNumbers () {
+    public void oddNumbers() {
         System.out.println("Print odd numbers between 1 and 100: ");
         int endCounting = 100;
 
         for (int i = 1; i <= endCounting; i++) {
-            if (i % 2 != 0){
+            if (i % 2 != 0) {
                 System.out.println(i);
             }
         }
     }
 
     //Lab 12/ex 7
-    public int addingUp (int givenNumber){
+    public int addingUp(int givenNumber) {
         int sum = 0;
-        for (int i = givenNumber; i <= 100; i++){
+        for (int i = givenNumber; i <= 100; i++) {
             sum += i;
         }
         return sum;
@@ -204,10 +203,10 @@ public class LogicalOp {
 
     //Lab 12/ ex 8
 
-    public float getAverage (int givenNumber) {
+    public float getAverage(int givenNumber) {
         float sum = 0;
 
-        for (float i = givenNumber; i <= 100; i++){
+        for (float i = givenNumber; i <= 100; i++) {
             sum += i;
         }
         float average = sum / 100F;
@@ -218,13 +217,13 @@ public class LogicalOp {
 
 
     //Lab 12/ ex 9
-    public void stars () {
+    public void stars() {
         System.out.println("Star pattern \n");
         int rows;
         int columns;
 
-        for (rows = 7; rows >= 1; rows-- ){
-            for (columns = 1; columns <= rows; columns++){
+        for (rows = 7; rows >= 1; rows--) {
+            for (columns = 1; columns <= rows; columns++) {
                 System.out.print("*");
             }
             System.out.println();
@@ -234,7 +233,7 @@ public class LogicalOp {
 
     //Lab 12/ex
 
-    public float sumAverageWhile () {
+    public float sumAverageWhile() {
         int number = 1;
         int sum = 0;
 
@@ -248,7 +247,7 @@ public class LogicalOp {
 
     //Lab 12 / ex 1
 
-    public void countToHundredWhile (int givenNumber) {
+    public void countToHundredWhile(int givenNumber) {
 
         while (givenNumber <= 100) {
             System.out.println(givenNumber);
@@ -259,8 +258,8 @@ public class LogicalOp {
 
     //Lab 12 / ex 2
 
-    public void countBackwardsWhile (int givenNumber) {
-        while (givenNumber >= -100 ) {
+    public void countBackwardsWhile(int givenNumber) {
+        while (givenNumber >= -100) {
             System.out.println(givenNumber);
             givenNumber--;
         }
@@ -268,7 +267,7 @@ public class LogicalOp {
     }
 
     //Lab 12/ ex 3
-    public void countBetweenWhile (int firstNumber, int secondNumber) {
+    public void countBetweenWhile(int firstNumber, int secondNumber) {
         while (firstNumber <= secondNumber) {
             System.out.println(firstNumber);
             firstNumber++;
@@ -276,7 +275,7 @@ public class LogicalOp {
     }
 
     //Lab 12 / ex 4
-    public void countFromSmallToBigWhile (int firstNumber, int secondNumber) {
+    public void countFromSmallToBigWhile(int firstNumber, int secondNumber) {
         int smallerNumber = Math.min(firstNumber, secondNumber);
         int biggerNumber = Math.max(firstNumber, secondNumber);
 
@@ -288,22 +287,22 @@ public class LogicalOp {
     }
 
     //Lab 12 / ex 5
-    public void evenNumbersWhile () {
+    public void evenNumbersWhile() {
 
         int firstNumber = 1;
 
         while (firstNumber <= 100) {
-           firstNumber++;
+            firstNumber++;
 
-           if (firstNumber % 2 == 0) {
-               System.out.println(firstNumber);
-           }
+            if (firstNumber % 2 == 0) {
+                System.out.println(firstNumber);
+            }
         }
     }
 
 
-   // Lab 12 / ex 6
-    public void oddNumberWhile () {
+    // Lab 12 / ex 6
+    public void oddNumberWhile() {
         int countFrom = 0;
         int endCount = 100;
 
@@ -317,7 +316,7 @@ public class LogicalOp {
     }
 
     //Lab 12 / ex 7
-    public void sumAndAverageWhile () {
+    public void sumAndAverageWhile() {
         int firstNumber = 111;
         int secondNumber = 8899;
 
@@ -334,8 +333,76 @@ public class LogicalOp {
         System.out.println(sum);
         System.out.println("Numbers between 111 - 8899: " + count);
         double average = sum / count;
-        System.out.println ("The average of the numbers is: " + average);
+        System.out.println("The average of the numbers is: " + average);
 
+    }
+
+    //Lab 12 / ex 8
+    public float divideBySevenWhile(int firstNumber, int lastNumber) {
+
+        float count = 0F;
+        float sum = 0F;
+
+
+        while (firstNumber <= lastNumber) {
+            if (firstNumber % 7 == 0) {
+                count += 1;
+                sum += firstNumber;
+            }
+            firstNumber++;
+        }
+
+        float average = sum / count;
+        return average;
+
+
+    }
+
+    //Lab 12 / ex 9
+    public void fibonacci() {
+
+        int firstNumber = 0;
+        int secondNumber = 1;
+        int endCount = 20;
+        int count = 1;
+
+        while (count <= endCount) {
+            int sum = firstNumber + secondNumber;
+            firstNumber = secondNumber;
+            secondNumber = sum;
+            System.out.println(sum);
+            count++;
+        }
+        System.out.println("\n");
+    }
+
+    //Lab 12/ ex 10
+     public void cozaLozaWoza() {
+        int startFrom = 1;
+        int endAt = 110;
+
+        while (startFrom <= endAt) {
+            if (startFrom % 11 == 0) {
+                System.out.println(startFrom + "\n");
+            } else if (startFrom % 3 == 0 && startFrom % 5 == 0 && startFrom % 7 == 0) {
+                System.out.print("CozaLozaWoza ");
+            } else if (startFrom % 5 == 0 && startFrom % 7 == 0) {
+                System.out.print("WozaLoza ");
+            } else if (startFrom % 3 == 0 && startFrom % 7 == 0) {
+                System.out.print("CozaWoza ");
+            } else if (startFrom % 3 == 0 && startFrom % 5 == 0) {
+                System.out.print("CozaLoza ");
+            } else if (startFrom % 7 == 0) {
+                System.out.print("Woza ");
+            } else if (startFrom % 5 == 0) {
+                System.out.print("Loza ");
+            } else if (startFrom % 3 == 0) {
+                System.out.print("Coza ");
+            } else
+                System.out.print(startFrom + " ");
+                startFrom++;
+
+        }
     }
 
 
@@ -343,9 +410,21 @@ public class LogicalOp {
 
 
 
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
