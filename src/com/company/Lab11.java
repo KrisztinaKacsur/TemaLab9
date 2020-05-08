@@ -98,8 +98,8 @@ public class Lab11 {
         logical.sumAndAverageWhile();
         System.out.println("\n");
 
-        float divide = logical.divideBySevenWhile(1,70);
-        System.out.println(divide + "\n");
+        float divideSeven = logical.divideBySevenWhile(1,70);
+        System.out.println("Average of numbers that are divisible by 7: " + divideSeven + "\n");
 
         logical.fibonacci();
 

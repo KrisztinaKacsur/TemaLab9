@@ -231,7 +231,7 @@ public class LogicalOp {
     }
 
 
-    //Lab 12/ex
+    //Lab 12/exemplu
 
     public float sumAverageWhile() {
         int number = 1;
@@ -248,6 +248,7 @@ public class LogicalOp {
     //Lab 12 / ex 1
 
     public void countToHundredWhile(int givenNumber) {
+        System.out.println("Count forward: ");
 
         while (givenNumber <= 100) {
             System.out.println(givenNumber);
@@ -259,6 +260,8 @@ public class LogicalOp {
     //Lab 12 / ex 2
 
     public void countBackwardsWhile(int givenNumber) {
+        System.out.println("Count backwards: ");
+
         while (givenNumber >= -100) {
             System.out.println(givenNumber);
             givenNumber--;
@@ -268,6 +271,8 @@ public class LogicalOp {
 
     //Lab 12/ ex 3
     public void countBetweenWhile(int firstNumber, int secondNumber) {
+        System.out.println("Count between two numbers: ");
+
         while (firstNumber <= secondNumber) {
             System.out.println(firstNumber);
             firstNumber++;
@@ -276,6 +281,8 @@ public class LogicalOp {
 
     //Lab 12 / ex 4
     public void countFromSmallToBigWhile(int firstNumber, int secondNumber) {
+        System.out.println("Choose smaller number & count to bigger: ");
+
         int smallerNumber = Math.min(firstNumber, secondNumber);
         int biggerNumber = Math.max(firstNumber, secondNumber);
 
@@ -288,6 +295,8 @@ public class LogicalOp {
 
     //Lab 12 / ex 5
     public void evenNumbersWhile() {
+
+        System.out.println("Even numbers between 1 and 100: ");
 
         int firstNumber = 1;
 
@@ -303,6 +312,8 @@ public class LogicalOp {
 
     // Lab 12 / ex 6
     public void oddNumberWhile() {
+        System.out.println("Odd numbers between 1 and 100: ");
+
         int countFrom = 0;
         int endCount = 100;
 
@@ -314,6 +325,7 @@ public class LogicalOp {
             }
         }
     }
+
 
     //Lab 12 / ex 7
     public void sumAndAverageWhile() {
@@ -360,6 +372,7 @@ public class LogicalOp {
 
     //Lab 12 / ex 9
     public void fibonacci() {
+        System.out.println("First 20 Fibonacci numbers: ");
 
         int firstNumber = 0;
         int secondNumber = 1;
