@@ -4,10 +4,10 @@ public class AppMain {
 
     public static void main(String[] args) {
 
-        Animal myPet = new Animal();
+        Dog myPet = new Dog();
 
         System.out.println(myPet.getName());
-        System.out.println(myPet.getRace());
+        System.out.println(myPet.getBreed());
         System.out.println(myPet.getColor());
         System.out.println(myPet.getFavouriteFood());
         System.out.println(myPet.getFavouriteActivity());
@@ -17,13 +17,13 @@ public class AppMain {
         System.out.println(myPet.getMood());
 
 
-        Rescuer myHuman = new Rescuer();
+        Girl myHuman = new Girl();
 
-        System.out.println(myHuman.name);
-        System.out.println(myHuman.money);
+        System.out.println(myHuman.getName());
+        System.out.println(myHuman.getMoney());
 
 
-        Food myDogFood = new Food();
+        Dogfood myDogFood = new Dogfood();
 
         System.out.println(myDogFood.getName());
         System.out.println(myDogFood.getPrice());

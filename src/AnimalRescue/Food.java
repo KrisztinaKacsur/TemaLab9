@@ -2,36 +2,37 @@ package AnimalRescue;
 
 public class Food {
 
+
     private String name;
     private float price;
     private float quantity;
 
-
-    public String getName () {
+    public String getName() {
         return name;
     }
 
-    public void setName (String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-
-    public float getPrice () {
+    public float getPrice() {
         return price;
     }
 
-    public void setPrice (float price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 
-
-    public float getQuantity () {
+    public float getQuantity() {
         return quantity;
     }
 
-    public void setQuantity (float quantity) {
+    public void setQuantity(float quantity) {
         this.quantity = quantity;
     }
+
+
+
 
 
 
