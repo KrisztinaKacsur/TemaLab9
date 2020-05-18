@@ -2,17 +2,15 @@ package AnimalRescue;
 
 public class ParrotFood extends Food {
 
-    public void seeds () {
-        System.out.println("Mixed seeds ...");
+    public void smallParrots () {
+        System.out.println("Food for small parrots ...");
     }
 
-    public void apple () {
-        System.out.println("Sliced apple..");
+    public void bigParrots () {
+        System.out.println("Food for big parrots .. ");
     }
 
-    public void carrot () {
-        System.out.println("Diced carrots..");
-    }
+
 
 
 }

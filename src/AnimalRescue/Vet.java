@@ -3,8 +3,12 @@ package AnimalRescue;
 public class Vet extends MedicalStaff {
 
 
-    public void consultAnimal() {
-        System.out.println("Consulting animal..");
+    public void consult () {
+        System.out.println("Consulting animal if nurse is not available..");
+    }
+
+    public void treatAnimal () {
+        System.out.println("Treats animal .. ");
     }
 
     public void writePrescription () {

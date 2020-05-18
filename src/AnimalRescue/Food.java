@@ -6,6 +6,11 @@ public class Food {
     private String name;
     private float price;
     private float quantity;
+    private String foodType;
+
+
+
+
 
     public String getName() {
         return name;
@@ -30,6 +35,21 @@ public class Food {
     public void setQuantity(float quantity) {
         this.quantity = quantity;
     }
+
+    public String getFoodType() {
+        return foodType;
+    }
+
+    public void setFoodType(String foodType) {
+        this.foodType = foodType;
+    }
+
+
+    public void expire () {
+        System.out.println("The expiration date is .. ");
+    }
+
+
 
 
 

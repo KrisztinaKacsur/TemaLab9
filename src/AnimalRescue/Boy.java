@@ -3,18 +3,18 @@ package AnimalRescue;
 public class Boy extends Rescuer {
 
     public void adopt () {
-        System.out.println("Adopt ..");
+        System.out.println("Adopt cat ..");
     }
 
     public void buyFood () {
-        System.out.println("Buy food..");
-    }
-
-    public void callVet () {
-        System.out.println("Call the vet..");
+        System.out.println("Buy cat food..");
     }
 
     public void takesPetToVet () {
-        System.out.println(" Take pet to vet..");
+        System.out.println(" Take cat to vet..");
+    }
+
+    public void brushFur () {
+        System.out.println("Brush cat fur .. ");
     }
 }

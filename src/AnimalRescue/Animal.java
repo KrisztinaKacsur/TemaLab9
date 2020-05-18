@@ -87,5 +87,25 @@ public class Animal {
 
 
 
+    public void eat() {
+
+        System.out.println("Eating..");
+    }
+
+    public void sleep () {
+        System.out.println("Sleep..");
+    }
+
+    public void run () {
+        System.out.println("Run..");
+    }
+
+    public void speak () {
+        System.out.println("Sound..");
+    }
+
+
+
+
 
 }

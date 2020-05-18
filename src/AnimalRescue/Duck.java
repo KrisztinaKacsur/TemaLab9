@@ -2,8 +2,10 @@ package AnimalRescue;
 
 public class Duck extends Animal {
 
-    public void sleep () {
-        System.out.println("Sleep in a nest..");
+
+
+    public void speak () {
+        System.out.println("quack..");
     }
 
     public void hatching () {
@@ -14,15 +16,9 @@ public class Duck extends Animal {
         System.out.println("Make nest..");
     }
 
-    public void quack () {
-        System.out.println("Quack..");
-    }
-
     public void swim () {
         System.out.println("Swim on the lake..");
     }
 
-    public void eat () {
-        System.out.println("Eat worms..");
-    }
+
 }
