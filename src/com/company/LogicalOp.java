@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.stream.IntStream;
+import java.util.Arrays;
 
 public class LogicalOp {
 
@@ -417,6 +417,257 @@ public class LogicalOp {
 
         }
     }
+
+
+
+    //LAB 13 Metoda pt afisare Array:
+    public void printArray (int [] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+
+    //Lab 13/ ex 2
+    public int[] getArrayHundred() {
+        int[] array = new int[100];
+
+        for (int i = 0; i < 100; i++) {
+            array[i] = i + 1;
+        }
+        return array;
+    }
+
+    //Lab 13/ ex 3
+    public int[] evenNumbersArray (int[] array) {
+
+        for (int i = 0; i < 100; i++) {
+            array[i] = i + 1;
+
+            if (array[i] % 2 == 0) {
+                System.out.println(array[i]);
+            }
+
+        }
+        return array;
+
+    }
+
+
+    //Lab 13/ ex 4
+    public float averageArray (int [] array) {
+        float sum = 0;
+
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+        }
+        return sum / array.length;
+
+    }
+
+    //Lab 13/ ex 5
+
+    public boolean returnStringArray (String [] array, String findIt) {
+        for (String whatever : array) {
+            if (whatever.equals(findIt))
+                return true;
+        }
+        return false;
+    }
+
+    //Lab 13/ ex 6
+    public int checkPosition (int[] array, int number){
+        int position = -1;
+
+        for (int i = 0 ; i < array.length ; i++) {
+            if (array[i] == number)
+                System.out.println("The position of the number is:");
+                position = i;
+        }
+       return position;
+    }
+
+
+    //Lab 13/ ex 7  Two Dimensional String array
+    public void pattern () {
+        char lines [][] = new char [9][9];
+
+        for (int i = 0; i < lines.length; i++) {
+            char subArray [] = lines [i];
+            System.out.print('-' + " " );
+
+
+            for (int j = 0; j < subArray.length; j++) {
+                System.out.print('-' + " ");
+            }
+            System.out.println();
+        }
+
+    }
+
+
+
+    //Lab 13/ ex 8
+
+    public int[] returnWithoutGivenNumber (int[] array, int number){
+
+        for(int i = 0 ; i < array.length ; i++){
+            array[i] = i + 1;
+
+            if (array[i] == number){
+                continue;
+            }
+            System.out.print(array[i]+ " ");
+        }
+        return array;
+    }
+
+
+    //Lab 13/ ex 9
+    public int returnSecondSmallest (int [] array) {
+
+        for (int i = 0; i < array.length; i++) {
+            Arrays.sort(array);
+        }
+
+        return array[1];
+    }
+
+
+    //Lab 13/ ex 10
+    public void copyArray (int[] originalArray, int[] emptyArray){
+
+        for(int i = 0; i < originalArray.length; i++){
+            emptyArray[i] = originalArray[i];
+        }
+    }
+
+
+
+    //--------------- Tema Optionala LAB 13 -----------------------
+
+
+
+    // 3 cel mai mic nr si cel mai mare
+    public void minMax (int [] array) {
+
+        int max = array[0];
+        int min = array[0];
+
+
+        for (int i = 1; i < array.length; i++) {
+
+            if (array[i] < min) {
+                min = array[i];
+            }
+
+            if (array[i] > max) {
+                max = array[i];
+            }
+
+        }
+
+        System.out.println("Minimum number: " + min);
+        System.out.println("Maximum number " + max);
+
+    }
+
+
+    // 4 inversare (prima valoare se schimba cu ultima)
+    // avem de la 1 pana la n, se schimba:
+    // 1 cu n; 2 cu n-1, 3 cu n - 2
+
+    public void reverseArray (int [] array) {
+
+        System.out.println("Original array: " + Arrays.toString(array));
+
+        for (int i = 0; i < array.length/2; i++){
+
+            int rev = array[i];
+            array[i] = array[array.length -i -1];
+            array[array.length -i -1] = rev;
+        }
+        System.out.println("Array after reverse: " + Arrays.toString(array));
+    }
+
+
+    // 5 find duplicate values
+
+    public void duplicated (int[] array) {
+
+        System.out.println("Original array: " + Arrays.toString(array));
+
+        for (int i = 0; i < array.length; i++){
+
+            for (int j = i + 1; j < array.length; j++) {
+
+                if (array[i] == array [j]) {
+                    System.out.println("Repeated elements: " + array[i]);
+                }
+            }
+
+        }
+
+    }
+
+
+
+    // 6
+    public void similarValues (String[] firstArray, String[] secondArray)  {
+
+        System.out.println(Arrays.toString(firstArray));
+        System.out.println(Arrays.toString(secondArray));
+
+        for (int i = 0; i < firstArray.length; i++){
+
+            for (int j = 0; j < secondArray.length; j++) {
+
+                if (firstArray[i].equals(secondArray [j])) {
+                    System.out.print (firstArray[i] + " ");
+                }
+            }
+        }
+    }
+
+
+    // 7
+    public int[] returnAscending (int [] array) {
+        System.out.println("Original array: " + Arrays.toString(array));
+
+        for (int i = 0; i < array.length; i++) {
+            Arrays.sort(array);
+
+        }
+
+        return array;
+    }
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
 
 
 

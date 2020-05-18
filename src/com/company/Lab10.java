@@ -20,7 +20,7 @@ public class Lab10 {
         int sumMethod = calc.sum(67,79);
         System.out.println("The result of the addition is: " + sumMethod);
 
-        int decreaseMethod = calc.decrease(46,24);
+        int decreaseMethod = calc.subtraction(46,24);
         System.out.println("The result of the subtraction is: " + decreaseMethod);
 
         int multiplyMethod = calc.multiply(15,46);

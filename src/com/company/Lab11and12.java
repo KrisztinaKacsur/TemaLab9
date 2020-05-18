@@ -1,6 +1,6 @@
 package com.company;
 
-public class Lab11 {
+public class Lab11and12 {
     public static void main(String[] args) {
 
         Calculator calc = new Calculator();
@@ -8,7 +8,7 @@ public class Lab11 {
         int sumMethod = calc.sum(31,92);
         System.out.println("The result of the addition is: " + sumMethod);
 
-        int decreaseMethod = calc.decrease(87,64);
+        int decreaseMethod = calc.subtraction(87,64);
         System.out.println("The result of the subtraction is: " + decreaseMethod);
 
         int multiplyMethod = calc.multiply(7,87);
