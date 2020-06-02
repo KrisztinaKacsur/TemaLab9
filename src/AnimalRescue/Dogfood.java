@@ -17,4 +17,8 @@ public class Dogfood extends Food {
     }
 
 
+    @Override
+    public void expire() {
+
+    }
 }

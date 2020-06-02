@@ -1,16 +1,10 @@
 package AnimalRescue;
 
-public class Cat extends Animal {
+public abstract class Cat extends Animal {
 
 
 
-    public void speak () {
-        System.out.println("meow..");
-    }
 
-    public void run () {
-        System.out.println("Run silent..");
-    }
 
     public void play () {
         System.out.println("Play..");
@@ -30,4 +24,23 @@ public class Cat extends Animal {
     }
 
 
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void sleep() {
+
+    }
+
+    @Override
+    public void run() {
+
+    }
+
+    @Override
+    public void speak() {
+
+    }
 }

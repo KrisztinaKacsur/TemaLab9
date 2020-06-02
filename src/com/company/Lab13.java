@@ -34,12 +34,15 @@ public class Lab13 {
 
         System.out.println("\n");
 
-        logical.pattern();
+        logical.linePattern();
 
         System.out.println("\n");
 
         int[] fullArray = new int[12];
-        logical.returnWithoutGivenNumber(fullArray, 9);
+        logical.removeNrFromArray(fullArray, 9);
+        System.out.println(Arrays.toString(fullArray));
+
+
 
         System.out.println("\n");
 

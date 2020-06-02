@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Parrot extends Animal {
+public class Parrot extends Bird {
 
 
 
@@ -8,17 +8,9 @@ public class Parrot extends Animal {
         System.out.println("Fly in the room..");
     }
 
-
-    public void speak () {
-        System.out.println("squawk..");
-    }
-
     public void pinch () {
         System.out.println("Pinch someones hand..");
     }
-
-
-
 
 
 

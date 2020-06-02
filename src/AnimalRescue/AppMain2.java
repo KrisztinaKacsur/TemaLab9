@@ -6,7 +6,7 @@ public class AppMain2 {
 
         System.out.println("Animals from the adoption center: " + "\n");
 
-        Dog maya = new Dog();
+        Dog maya = new Labrador();
         maya.setName("Maya");
         maya.setBreed("labrador");
         maya.setColor("black");
@@ -33,7 +33,7 @@ public class AppMain2 {
         System.out.println(maya.getMood());
         System.out.println("\n");
 
-        Cat sassy = new Cat();
+        Cat sassy = new MaineCoon();
         sassy.setName("Sassy");
         sassy.setBreed("Maine Coon");
         sassy.setColor("Grey");
@@ -116,17 +116,25 @@ public class AppMain2 {
         Girl rescuer = new Girl();
         rescuer.setName("Freya");
         rescuer.setMoney(3500);
+        rescuer.setAge(24);
+        rescuer.setOccupation("Student");
 
         System.out.println(rescuer.getName());
         System.out.println(rescuer.getMoney());
+        System.out.println(rescuer.getAge());
+        System.out.println(rescuer.getOccupation());
         System.out.println("\n");
 
         Boy secondRescuer = new Boy();
         secondRescuer.setName("Kevin");
         secondRescuer.setMoney(6500);
+        secondRescuer.setAge(28);
+        secondRescuer.setOccupation("QA tester");
 
         System.out.println(secondRescuer.getName());
         System.out.println(secondRescuer.getMoney());
+        System.out.println(secondRescuer.getAge());
+        System.out.println(secondRescuer.getOccupation());
         System.out.println("\n");
 
 
@@ -158,7 +166,7 @@ public class AppMain2 {
         System.out.println(foodForCats.getQuantity());
         System.out.println("\n");
 
-        ParrotFood foodForParrots = new ParrotFood();
+        BirdFood foodForParrots = new BirdFood();
         foodForParrots.setName("Kirikiri");
         foodForParrots.setFoodType("Seeds");
         foodForParrots.setPrice(20.5F);
@@ -183,34 +191,34 @@ public class AppMain2 {
 
         Vet doctor = new Vet();
         doctor.setName("Oliver Jackson");
-        doctor.setSpecialization("veterinarian");
+        doctor.setOccupation("veterinarian");
         doctor.consult();
         doctor.speakWithRescuer();
         doctor.calmAnimal();
 
         System.out.println(doctor.getName());
-        System.out.println(doctor.getSpecialization());
+        System.out.println(doctor.getOccupation());
         System.out.println("\n");
 
         Nurse nurseLinda = new Nurse();
         nurseLinda.setName("Linda Baker");
-        nurseLinda.setSpecialization("Nurse");
+        nurseLinda.setOccupation("Nurse");
         nurseLinda.speakWithRescuer();
         nurseLinda.consult();
         nurseLinda.calmAnimal();
 
         System.out.println(nurseLinda.getName());
-        System.out.println(nurseLinda.getSpecialization());
+        System.out.println(nurseLinda.getOccupation());
         System.out.println("\n");
 
         Technician veterinaryTechnician = new Technician();
         veterinaryTechnician.setName("Marcus Lander");
-        veterinaryTechnician.setSpecialization("Veterinary Technician");
+        veterinaryTechnician.setOccupation("Veterinary Technician");
         veterinaryTechnician.speakWithRescuer();
         veterinaryTechnician.calmAnimal();
 
         System.out.println(veterinaryTechnician.getName());
-        System.out.println(veterinaryTechnician.getSpecialization());
+        System.out.println(veterinaryTechnician.getOccupation());
         System.out.println("\n");
 
 

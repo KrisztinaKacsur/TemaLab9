@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class ParrotFood extends Food {
+public class BirdFood extends Food {
 
     public void smallParrots () {
         System.out.println("Food for small parrots ...");
@@ -13,4 +13,8 @@ public class ParrotFood extends Food {
 
 
 
+    @Override
+    public void expire() {
+
+    }
 }

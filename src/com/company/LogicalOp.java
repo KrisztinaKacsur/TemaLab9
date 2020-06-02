@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class LogicalOp {
 
@@ -441,11 +441,17 @@ public class LogicalOp {
     //Lab 13/ ex 3
     public int[] evenNumbersArray (int[] array) {
 
-        for (int i = 0; i < 100; i++) {
-            array[i] = i + 1;
+        int j = 0;
 
-            if (array[i] % 2 == 0) {
-                System.out.println(array[i]);
+        for (int i = 1; i < 100; i++) {
+            //array[i] = i + 1;
+
+            if (i % 2 == 0) {
+                array[j] = i;
+
+                System.out.println(array[j]);
+
+                j++;
             }
 
         }
@@ -477,19 +483,30 @@ public class LogicalOp {
 
     //Lab 13/ ex 6
     public int checkPosition (int[] array, int number){
-        int position = -1;
+
 
         for (int i = 0 ; i < array.length ; i++) {
             if (array[i] == number)
-                System.out.println("The position of the number is:");
-                position = i;
+
+                return i;
         }
-       return position;
+       return 0;
     }
 
 
     //Lab 13/ ex 7  Two Dimensional String array
-    public void pattern () {
+
+    public void linePattern () {
+
+    char[] line = {'-', '-', '-', '-', '-', '-', '-', '-', '-', '-',};
+
+        for (int i = 0; i <= 10; i++) {
+        System.out.println(line);
+        }
+    }
+
+
+    /*public void pattern () {
         char lines [][] = new char [9][9];
 
         for (int i = 0; i < lines.length; i++) {
@@ -503,13 +520,13 @@ public class LogicalOp {
             System.out.println();
         }
 
-    }
+    } */
 
 
 
     //Lab 13/ ex 8
 
-    public int[] returnWithoutGivenNumber (int[] array, int number){
+    /*public int[] returnWithoutGivenNumber (int[] array, int number){
 
         for(int i = 0 ; i < array.length ; i++){
             array[i] = i + 1;
@@ -520,6 +537,28 @@ public class LogicalOp {
             System.out.print(array[i]+ " ");
         }
         return array;
+    }*/
+
+
+    public int[] removeNrFromArray(int[] myArray, int nr) {
+
+        int[] secondArray = new int[myArray.length];
+        int j = 0;
+
+        for (int i = 0; i < myArray.length; i++) {
+            if (myArray[i] == nr)
+                continue;
+
+            secondArray[j++] = myArray[i];
+        }
+
+        int[] finArray = new int[j];
+        for (int i = 0; i < j; i++)
+
+            finArray[i] = secondArray[i];
+
+        return finArray;
+
     }
 
 
@@ -644,28 +683,121 @@ public class LogicalOp {
 
 
 
+    //----------------------------------------- LAB 14 LISTS -----------------------------------------------
+    // print list (ex curs )
+    public void printList (List<Integer> myList) {
+        /*for (int i = 0; i < myList.size(); i++ ){
+            System.out.println(myList.get(i));
+        }*/
 
-    
+        for (int i : myList) {
+            System.out.println(i);
+        }
 
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
+    // ex 2
+    public void addValueToList (List<Integer> originalList, int number) {
+        originalList.add(number);
+    }
+
+
+    //ex 3
+    public void startListFromPosition (List<Integer> list, int startFromPosition) {
+
+        for (int i = startFromPosition; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
+    }
+
+    //ex 4
+    public void reverseList (List<Integer> list) {
+        for (int i = list.size() - 1; i >= 0; i--) {
+            System.out.println(list.get(i));
+        }
+
+    }
+
+
+    //ex 5
+    public void addString (List<String> list, String element, int position) {
+            list.add(position, element);
+
+    }
+
+
+    //ex 6
+    public void moveSecondValueToFirstIndex (List<Integer> list, int numberToAdd) {
+        list.add(0, numberToAdd);
+    }
+
+
+    //ex 7
+    public void printValuesAndPositions (List<Integer> list) {
+
+        for (int i = 0; i < list.size(); i++) {
+
+            System.out.println("Pe pozitia " + i + " este valoarea " + list.get(i));
+
+        }
+
+    }
+
+    //ex 8
+    public int returnMaxValue (List<Integer> list) {
+
+        int max = 0;
+
+        for (int i = 0; i < list.size(); i++) {
+            if ( list.get(i) > max) {
+                max = list.get(i);
+
+            }
+        }
+
+        System.out.println(max);
+        return max;
+
+    }
+
+    //----- Tema optionala Lists ------
+    //ex 1
+
+    public void switchPosition (List<Integer> list, int firstIndex, int secondIndex) {
+        System.out.println("original list: " + list);
+
+
+
+        int firstValue;
+        int secondValue;
+
+        firstValue = list.get(firstIndex);
+        secondValue = list.get(secondIndex);
+
+        list.remove(firstIndex);
+        list.add(firstIndex, secondValue);
+
+        list.remove(secondIndex);
+        list.add(secondIndex,firstValue);
+
+
+        System.out.println(list);
+
+
+    }
 
 
 
 
 
-    
+
+
+
+
+
+
 
 
 

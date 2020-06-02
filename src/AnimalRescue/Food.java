@@ -1,6 +1,6 @@
 package AnimalRescue;
 
-public class Food {
+public abstract class Food {
 
 
     private String name;
@@ -45,9 +45,8 @@ public class Food {
     }
 
 
-    public void expire () {
-        System.out.println("The expiration date is .. ");
-    }
+
+    public abstract void expire ();
 
 
 
