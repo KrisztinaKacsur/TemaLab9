@@ -790,6 +790,43 @@ public class LogicalOp {
 
 
 
+    //------------------------ Tema Lab 15------------------
+    //lab 15/ ex 5
+    public void insideCatchLarge (int [] array, int number) {
+
+        System.out.println("The array is: " + Arrays.toString(array));
+
+        try {
+            System.out.println("Value of index " + number + " is " + array[number]);
+
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Inside catch, number too large");
+
+        }
+
+
+    }
+
+
+    //lab 15/ ex 6
+    public void waitTwo (int secWait) {
+
+
+        try {
+            Thread.sleep(secWait*1000);
+            System.out.println("You waited " + secWait + " seconds");
+
+        } catch (InterruptedException e) {
+           System.out.println("Time out");
+
+
+        }
+
+
+    }
+
+
+
 
 
 
